@@ -218,6 +218,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1400940211084424, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_TagString
+      value: panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736143595529920, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_TagString
+      value: panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413335061417412, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_TagString
+      value: panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013320405982202, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_TagString
+      value: panel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
   m_IsPrefabAsset: 0
