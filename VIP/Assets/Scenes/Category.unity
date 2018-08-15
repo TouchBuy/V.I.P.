@@ -234,9 +234,18 @@ Prefab:
       propertyPath: m_TagString
       value: panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1773524632034806, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_TagString
+      value: panel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &365293630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1773524632034806, guid: d4ef5582954f2cc4daba1ceb147d2b85,
+    type: 2}
+  m_PrefabInternal: {fileID: 365293629}
 --- !u!1 &409810012
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +528,16 @@ Prefab:
       propertyPath: center_eye_anchor
       value: 
       objectReference: {fileID: 1019105050}
+    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
+        type: 2}
+      propertyPath: menu_panel
+      value: 
+      objectReference: {fileID: 365293630}
+    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
+        type: 2}
+      propertyPath: genre_panel
+      value: 
+      objectReference: {fileID: 365293630}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52953c2d180cc704abaf8d935cd6b2db, type: 2}
   m_IsPrefabAsset: 0
