@@ -29,14 +29,9 @@ public class LaserPointer : MonoBehaviour {
     }
 
     void Update() {
-        //var bits = GameObject.FindGameObjectsWithTag("bit"); // bitを取得
-        //print(bits);
         var pointer = Pointer;
         if (pointer == null || _LaserPointerRenderer == null) {
             return;
-        // bitもしくはLinRendererがなければ終了
-        //} else if (bits == null || _LaserPointerRenderer == null) {
-        //    return;
         }
         // コントローラー位置からRayを飛ばす
         Ray pointerRay = new Ray(pointer.position, pointer.forward);
