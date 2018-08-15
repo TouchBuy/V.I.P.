@@ -2,50 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserPointer : MonoBehaviour {
+public class laser_pointer : MonoBehaviour {
     [SerializeField]
-    private Transform _RightHandAnchor;
+    private Transform right_hand_anchor;
     [SerializeField]
-    private Transform _LeftHandAnchor;
+    private Transform left_hand_anchor;
     [SerializeField]
-    private Transform _CenterEyeAnchor;
+    private Transform center_eye_anchor;
     [SerializeField]
-    private float _MaxDistance = 100.0f;
+    private LineRenderer laser_pointer_renderer;
     [SerializeField]
-    private LineRenderer _LaserPointerRenderer;
+    private float max_distance = 100.0f;
 
     private Transform Pointer {
         get {
             // 現在アクティブなコントローラーを取得
             var controller = OVRInput.GetActiveController();
             if (controller == OVRInput.Controller.RTrackedRemote) {
-                return _RightHandAnchor;
+                return right_hand_anchor;
             } else if (controller == OVRInput.Controller.LTrackedRemote) {
-                return _LeftHandAnchor;
+                return left_hand_anchor;
             }
             // どちらも取れなければ目の間からビームが出る
-            return _CenterEyeAnchor;
+            return center_eye_anchor;
         }
     }
 
     void Update() {
         var pointer = Pointer;
-        if (pointer == null || _LaserPointerRenderer == null) {
+        if (pointer == null || laser_pointer_renderer == null) {
             return;
         }
         // コントローラー位置からRayを飛ばす
         Ray pointerRay = new Ray(pointer.position, pointer.forward);
 
         // レーザーの起点
-        _LaserPointerRenderer.SetPosition(0, pointerRay.origin);
+        laser_pointer_renderer.SetPosition(0, pointerRay.origin);
 
         RaycastHit hitInfo;
-        if (Physics.Raycast(pointerRay, out hitInfo, _MaxDistance)) {
+        if (Physics.Raycast(pointerRay, out hitInfo, max_distance)) {
             // Rayがヒットしたらそこまで
-            _LaserPointerRenderer.SetPosition(1, hitInfo.point);
+            laser_pointer_renderer.SetPosition(1, hitInfo.point);
         } else {
             // Rayがヒットしなかったら向いている方向にMaxDistance伸ばす
-            _LaserPointerRenderer.SetPosition(1, pointerRay.origin + pointerRay.direction * _MaxDistance);
+            laser_pointer_renderer.SetPosition(1, pointerRay.origin + pointerRay.direction * max_distance);
         }
     }
 }

@@ -218,6 +218,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1528084219136874, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
+      propertyPath: m_Name
+      value: genre_panel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
   m_IsPrefabAsset: 0
@@ -392,6 +396,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
   m_IsPrefabAsset: 0
+--- !u!120 &646918989 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 120489068918814658, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1930170706}
 --- !u!4 &1019105050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -1082,6 +1091,35 @@ Prefab:
         type: 2}
       propertyPath: m_Parameters.widthMultiplier
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769610684701470, guid: 5f66a08cda93f6a4abe68a701bbf3a58, type: 2}
+      propertyPath: m_Name
+      value: laser_pointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114735385418812796, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+        type: 2}
+      propertyPath: left_hand_anchor
+      value: 
+      objectReference: {fileID: 1142498785}
+    - target: {fileID: 114735385418812796, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+        type: 2}
+      propertyPath: right_hand_anchor
+      value: 
+      objectReference: {fileID: 1142498784}
+    - target: {fileID: 114735385418812796, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+        type: 2}
+      propertyPath: center_eye_anchor
+      value: 
+      objectReference: {fileID: 1019105050}
+    - target: {fileID: 114735385418812796, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+        type: 2}
+      propertyPath: laser_pointer_renderer
+      value: 
+      objectReference: {fileID: 646918989}
+    - target: {fileID: 114735385418812796, guid: 5f66a08cda93f6a4abe68a701bbf3a58,
+        type: 2}
+      propertyPath: max_distance
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f66a08cda93f6a4abe68a701bbf3a58, type: 2}

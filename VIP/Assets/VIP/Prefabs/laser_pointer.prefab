@@ -9,70 +9,70 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1769610684701470}
+  m_RootGameObject: {fileID: 1193299060186072}
   m_IsPrefabAsset: 1
---- !u!1 &1769610684701470
+--- !u!1 &1193299060186072
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4336926263041236}
-  - component: {fileID: 114735385418812796}
-  - component: {fileID: 120489068918814658}
+  - component: {fileID: 4403102607360454}
+  - component: {fileID: 114670310910905424}
+  - component: {fileID: 120383707621360286}
   m_Layer: 0
-  m_Name: LaserPointer
+  m_Name: laser_pointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4336926263041236
+--- !u!4 &4403102607360454
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1769610684701470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 448.57635, y: -514.63586, z: -805.6102}
+  m_GameObject: {fileID: 1193299060186072}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114735385418812796
+--- !u!114 &114670310910905424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1769610684701470}
+  m_GameObject: {fileID: 1193299060186072}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3ac6124b4168ba4ab4dc4851d7680e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RightHandAnchor: {fileID: 0}
-  _LeftHandAnchor: {fileID: 0}
-  _CenterEyeAnchor: {fileID: 0}
-  _MaxDistance: 100
-  _LaserPointerRenderer: {fileID: 120489068918814658}
---- !u!120 &120489068918814658
+  right_hand_anchor: {fileID: 0}
+  left_hand_anchor: {fileID: 0}
+  center_eye_anchor: {fileID: 0}
+  laser_pointer_renderer: {fileID: 120383707621360286}
+  max_distance: 50
+--- !u!120 &120383707621360286
 LineRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1769610684701470}
+  m_GameObject: {fileID: 1193299060186072}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 77e45547a9956f44b84d95310be30b3c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +97,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 1
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
