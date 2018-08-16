@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class laser_pointer : MonoBehaviour {
     [SerializeField]
@@ -55,6 +56,7 @@ public class laser_pointer : MonoBehaviour {
                     }
                     Destroy(child.gameObject);
                 }
+                SceneManager.LoadScene("VIP_view");
             }
         } else {
             // Rayがヒットしなかったら向いている方向にMaxDistance伸ばす
