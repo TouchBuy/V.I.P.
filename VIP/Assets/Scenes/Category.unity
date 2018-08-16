@@ -520,6 +520,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
         type: 2}
+      propertyPath: genre_panel
+      value: 
+      objectReference: {fileID: 365293630}
+    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
+        type: 2}
       propertyPath: right_hand_anchor
       value: 
       objectReference: {fileID: 1142498784}
@@ -533,16 +538,6 @@ Prefab:
       propertyPath: center_eye_anchor
       value: 
       objectReference: {fileID: 1019105050}
-    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
-        type: 2}
-      propertyPath: menu_panel
-      value: 
-      objectReference: {fileID: 365293630}
-    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
-        type: 2}
-      propertyPath: genre_panel
-      value: 
-      objectReference: {fileID: 365293630}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52953c2d180cc704abaf8d935cd6b2db, type: 2}
   m_IsPrefabAsset: 0
