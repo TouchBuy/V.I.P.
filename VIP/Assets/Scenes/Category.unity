@@ -238,6 +238,11 @@ Prefab:
       propertyPath: m_TagString
       value: panel
       objectReference: {fileID: 0}
+    - target: {fileID: 23653979386446462, guid: d4ef5582954f2cc4daba1ceb147d2b85,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85320f50710fcfb4d886bc56151bea1b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ef5582954f2cc4daba1ceb147d2b85, type: 2}
   m_IsPrefabAsset: 0
