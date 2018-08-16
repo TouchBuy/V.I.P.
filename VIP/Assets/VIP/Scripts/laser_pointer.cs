@@ -47,10 +47,10 @@ public class laser_pointer : MonoBehaviour {
             laser_pointer_renderer.SetPosition(1, hitInfo.point);
             //コントローラーのトリガーが押されているとき,レーザーがパネルにあたっていたら
             if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)
-                && hitInfo.collider.gameObject == genre_panel) {
+                && hitInfo.collider.gameObject.tag == "panel") {
                 //パネル一覧を取得のち選択されてない要素を削除
                 foreach (Transform child in genre_panel.transform) {
-                    if (child == hitInfo.collider.gameObject) {
+                    if (child == hitInfo.collider.gameObject.transform) {
                         continue;
                     }
                     Destroy(child.gameObject);
