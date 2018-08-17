@@ -14,10 +14,11 @@ public class view_swiipemove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(OVRInput.Get(OVRInput.Button.Left)){
-            car.AddTorque(10000, 10000, 10000);
-        }else if(OVRInput.Get(OVRInput.Button.Right)){
-            car.AddTorque(-10000, -10000, -10000);
-        }
+        //if(OVRInput.Get(OVRInput.Button.Left)){
+        //    car.AddTorque(10000, 10000, 10000);
+        //}else if(OVRInput.Get(OVRInput.Button.Right)){
+        //    car.AddTorque(-10000, -10000, -10000);
+        //}
+        car.AddTorque(100000, 100000, 100000, ForceMode.Impulse);
 	}
 }
