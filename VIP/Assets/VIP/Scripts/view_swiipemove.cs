@@ -6,6 +6,7 @@ public class view_swiipemove : MonoBehaviour {
 
     public float torque;
     public Rigidbody car;
+    public bool debug;
 
 	// Use this for initialization
 	void Start () {
@@ -14,11 +15,10 @@ public class view_swiipemove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if(OVRInput.Get(OVRInput.Button.Left)){
-        //    car.AddTorque(10000, 10000, 10000);
-        //}else if(OVRInput.Get(OVRInput.Button.Right)){
-        //    car.AddTorque(-10000, -10000, -10000);
-        //}
-        car.AddTorque(100000, 100000, 100000, ForceMode.Impulse);
+        if(OVRInput.Get(OVRInput.Button.Left) || Input.GetKey(KeyCode.LeftCommand)){
+            car.AddTorque(0, -5, 0, ForceMode.Impulse);
+        }else if(OVRInput.Get(OVRInput.Button.Right) || Input.GetKey(KeyCode.RightCommand)){
+            car.AddTorque(0, 5, 0, ForceMode.Impulse);
+        }
 	}
 }
