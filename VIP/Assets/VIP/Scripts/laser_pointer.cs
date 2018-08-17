@@ -52,10 +52,9 @@ public class laser_pointer : MonoBehaviour {
                 //パネル一覧を取得のち選択されてない要素を削除
                 string scene = "Category";
                 foreach (Transform child in genre_panel.transform) {
-                    scene = child.gameObject.name;
                     if (child == hitInfo.collider.gameObject.transform) {
+                        scene = child.gameObject.name;
                         continue;
-
                     }
                     Destroy(child.gameObject);
                 }

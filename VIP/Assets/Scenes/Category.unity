@@ -615,6 +615,11 @@ Prefab:
       propertyPath: center_eye_anchor
       value: 
       objectReference: {fileID: 1019105050}
+    - target: {fileID: 114670310910905424, guid: 52953c2d180cc704abaf8d935cd6b2db,
+        type: 2}
+      propertyPath: yuka
+      value: 
+      objectReference: {fileID: 409810012}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52953c2d180cc704abaf8d935cd6b2db, type: 2}
   m_IsPrefabAsset: 0
