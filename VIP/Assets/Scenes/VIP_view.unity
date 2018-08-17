@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -491,6 +491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ac3e5f50ed94d3181a3e64cf50f567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 0
+  car: {fileID: 0}
 --- !u!4 &1325687142
 Transform:
   m_ObjectHideFlags: 0
@@ -499,7 +501,7 @@ Transform:
   m_GameObject: {fileID: 1325687140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 1218893550}
   - {fileID: 1382197746}
@@ -826,6 +828,11 @@ Prefab:
     - target: {fileID: 23649897481559458, guid: 6b188a5005a924580a99f0ad7ed72ed5,
         type: 2}
       propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc811ad90c3eb4c1a9ad608f3f1e4b41, type: 2}
+    - target: {fileID: 23847960356329438, guid: 6b188a5005a924580a99f0ad7ed72ed5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc811ad90c3eb4c1a9ad608f3f1e4b41, type: 2}
     m_RemovedComponents: []
