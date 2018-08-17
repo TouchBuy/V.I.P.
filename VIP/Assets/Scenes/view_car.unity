@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 982692244}
   - component: {fileID: 982692243}
   - component: {fileID: 982692242}
+  - component: {fileID: 982692246}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -365,11 +366,26 @@ Transform:
   m_GameObject: {fileID: 982692241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &982692246
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982692241}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1072662347
 Prefab:
   m_ObjectHideFlags: 0
@@ -473,6 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325687142}
   - component: {fileID: 1325687141}
+  - component: {fileID: 1325687143}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -491,8 +508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ac3e5f50ed94d3181a3e64cf50f567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 0
-  car: {fileID: 0}
+  torque: 10
+  car: {fileID: 1325687143}
+  debug: 0
 --- !u!4 &1325687142
 Transform:
   m_ObjectHideFlags: 0
@@ -504,12 +522,27 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 1218893550}
-  - {fileID: 1382197746}
   - {fileID: 708243008}
+  - {fileID: 1382197746}
   - {fileID: 1539453741}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1325687143
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325687140}
+  serializedVersion: 2
+  m_Mass: 4000
+  m_Drag: 10
+  m_AngularDrag: 3.2
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1382197746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4013073016293618, guid: 6b188a5005a924580a99f0ad7ed72ed5,
@@ -552,7 +585,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4013073016293618, guid: 68ae5003a75084b1e807a2f86044e9bb, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23977666320045376, guid: 68ae5003a75084b1e807a2f86044e9bb,
         type: 2}
@@ -728,7 +761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4013073016293618, guid: 6b188a5005a924580a99f0ad7ed72ed5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 23977666320045376, guid: 6b188a5005a924580a99f0ad7ed72ed5,
         type: 2}
