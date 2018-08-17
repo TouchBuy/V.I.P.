@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/VIP_title.unity
+  - enabled: 1
+    path: Assets/VIP/Scenes/title.unity
     guid: 538a8e5bae2ec4714ab0914be00ad810
   - enabled: 1
-    path: Assets/Scenes/Category.unity
+    path: Assets/VIP/Scenes/Category.unity
     guid: 601279a14724b9047b971745af35ea0f
   - enabled: 1
-    path: Assets/Scenes/view_car.unity
+    path: Assets/VIP/Scenes/view_car.unity
     guid: ff2074f36a6974f0db42970e69f83809
   m_configObjects: {}
