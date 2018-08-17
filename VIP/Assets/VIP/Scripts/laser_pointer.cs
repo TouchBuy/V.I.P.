@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class laser_pointer : MonoBehaviour {
     [SerializeField]
@@ -49,12 +50,15 @@ public class laser_pointer : MonoBehaviour {
             if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)
                 && hitInfo.collider.gameObject.tag == "panel") {
                 //パネル一覧を取得のち選択されてない要素を削除
+                string scene = "Category";
                 foreach (Transform child in genre_panel.transform) {
                     if (child == hitInfo.collider.gameObject.transform) {
+                        scene = child.gameObject.name;
                         continue;
                     }
                     Destroy(child.gameObject);
                 }
+                SceneManager.LoadScene(string.Format("view_{0}", scene));
             }
         } else {
             // Rayがヒットしなかったら向いている方向にMaxDistance伸ばす
