@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23065577469971756}
   - component: {fileID: 64603975203644004}
   m_Layer: 0
-  m_Name: Plane 1
+  m_Name: user_point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
