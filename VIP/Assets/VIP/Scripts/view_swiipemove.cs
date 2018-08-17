@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class view_swiipemove : MonoBehaviour {
 
+    public float torque;
+    public Rigidbody car;
+
 	// Use this for initialization
 	void Start () {
-        
+        car = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Rigidbody car = GetComponent<Rigidbody>();
         if(OVRInput.Get(OVRInput.Button.Left)){
-            //transform.Rotate(0, (float)-0.5, 0);
-            car.AddForce(Vector3.forward * 0.1f,ForceMode.Impulse);
+            car.AddTorque(10000, 10000, 10000);
         }else if(OVRInput.Get(OVRInput.Button.Right)){
-            //transform.Rotate(0, (float)0.5, 0);
-            car.AddForce(Vector3.forward * 0.1f, ForceMode.Impulse);
+            car.AddTorque(-10000, -10000, -10000);
         }
 	}
 }

@@ -491,6 +491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ac3e5f50ed94d3181a3e64cf50f567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torque: 0
+  car: {fileID: 0}
 --- !u!4 &1325687142
 Transform:
   m_ObjectHideFlags: 0
@@ -826,6 +828,11 @@ Prefab:
     - target: {fileID: 23649897481559458, guid: 6b188a5005a924580a99f0ad7ed72ed5,
         type: 2}
       propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc811ad90c3eb4c1a9ad608f3f1e4b41, type: 2}
+    - target: {fileID: 23847960356329438, guid: 6b188a5005a924580a99f0ad7ed72ed5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc811ad90c3eb4c1a9ad608f3f1e4b41, type: 2}
     m_RemovedComponents: []
